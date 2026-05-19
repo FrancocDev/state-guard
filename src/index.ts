@@ -3,8 +3,8 @@
  *
  * Tree-shakeable ESM modules. Prefer subpath imports for tree-shaking:
  * ```ts
- * import { StateName } from "state-guard/types"
- * import { createGuard } from "state-guard/guards"
+ * import { StateName } from "@francocdev/state-guard/types"
+ * import { createGuard } from "@francocdev/state-guard/guards"
  * ```
  */
 

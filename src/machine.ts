@@ -336,6 +336,18 @@ class MachineRuntime<M extends StateMap, C extends keyof M, TC>
 /**
  * Create a new state machine builder.
  *
+ * TypeScript infers the state space from your `.state()` calls. For larger
+ * machines (5+ states) you can provide an explicit state union as a type
+ * argument to constrain the builder's state space:
+ *
+ * ```ts
+ * type S = "a" | "b" | "c" | "d" | "e" | "f" | "g";
+ * const m = createMachine<S>("a")
+ *   .state("a").on("NEXT", "b")
+ *   .state("b")
+ *   .build();
+ * ```
+ *
  * @param initialState — Name of the initial (starting) state
  * @returns A `MachineBuilder` chain
  *

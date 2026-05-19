@@ -1,5 +1,5 @@
 {
-  "name": "state-guard",
+  "name": "@francocdev/state-guard",
   "version": "0.1.0",
   "private": false,
   "type": "module",
