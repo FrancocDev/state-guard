@@ -2,6 +2,8 @@
   "name": "@francocdev/state-guard",
   "version": "0.1.0",
   "private": false,
+  "license": "MIT",
+  "repository": "github:FrancocDev/state-guard",
   "type": "module",
   "exports": {
     ".": "./dist/index.js",
