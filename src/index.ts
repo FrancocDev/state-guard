@@ -23,3 +23,7 @@ export type {
 // Guards
 export type { GuardParams, Guard } from "./guards.js";
 export { createGuard, composeGuards, andGuards, orGuards } from "./guards.js";
+
+// Machine
+export type { StateMap, Machine } from "./machine.js";
+export { createMachine, MachineBuilder } from "./machine.js";
