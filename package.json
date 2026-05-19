@@ -1,0 +1,23 @@
+{
+  "name": "state-guard",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./types": "./dist/types.js",
+    "./guards": "./dist/guards.js"
+  },
+  "files": ["dist/"],
+  "scripts": {
+    "build": "bun build --target node --format esm --outdir dist src/index.ts src/types.ts src/guards.ts && bunx tsc --project tsconfig.build.json --emitDeclarationOnly",
+    "test": "bun test",
+    "typecheck": "bunx tsc --noEmit"
+  },
+  "dependencies": {
+    "@francocdev/ts-patterns": "^0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
+}

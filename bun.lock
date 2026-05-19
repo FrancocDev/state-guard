@@ -1,0 +1,20 @@
+{
+  "lockfileVersion": 1,
+  "configVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "state-guard",
+      "dependencies": {
+        "@francocdev/ts-patterns": "^0.1.0",
+      },
+      "devDependencies": {
+        "typescript": "^5.8.2",
+      },
+    },
+  },
+  "packages": {
+    "@francocdev/ts-patterns": ["@francocdev/ts-patterns@0.1.0", "", {}, "sha512-lNfVakGp6Y+Vg2nCGeJUN0wAVP7b7zIQDaXU3eO2v8RMZqxRXhjPmPguk4cIVWxmSzUwfaRR/4Wx1x3Eczsfag=="],
+
+    "typescript": ["typescript@5.9.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw=="],
+  }
+}
