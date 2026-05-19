@@ -4,6 +4,7 @@
  * Tree-shakeable ESM modules. Prefer subpath imports for tree-shaking:
  * ```ts
  * import { StateName } from "state-guard/types"
+ * import { createGuard } from "state-guard/guards"
  * ```
  */
 
@@ -18,3 +19,7 @@ export type {
   GuardContext,
   Transition,
 } from "./types.js";
+
+// Guards
+export type { GuardParams, Guard } from "./guards.js";
+export { createGuard, composeGuards, andGuards, orGuards } from "./guards.js";
